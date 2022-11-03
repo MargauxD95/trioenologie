@@ -1,13 +1,25 @@
 /* BODY */
 
 /* Redimension de la div container */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Marges des div class ROW (scroll côté) */
+
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0!important;
+}
 
 .container {
     /* margin-top: 86px; */
     /* padding-bottom: 100px; */
     min-height: 90vh;
 }
-
 
 /* FIN BODY */
 
@@ -592,17 +604,12 @@ h1.profil, h2.profil{
 }
 
 footer { 
-    /* position: relative;
-    left: 0;
-    bottom: 0; */
-    /* width: 100%; */
+    width: 100%; 
     background-color: #f8c7cc; 
     font-family: 'Square Peg';
     font-size: 1.4rem;
     color: #eea1aa !important;
-    /* padding-top: 0; */
-    /* z-index:1; */
-    /* margin-top: 3rem; */
+    margin: 0;
 }
 
 #footerNav a {
@@ -736,9 +743,10 @@ h1 span.sP{ font-size: 4rem;}
 
 /* Carousels */
 
-#carouselHome {
-    width: 600px;
-    height:400px;
+.carouselHome {
+    aspect-ratio: 19/9;
+    object-fit: cover;
+    height: 580px;
 }
 
 #carouselArticle {

@@ -4,13 +4,13 @@
 
 {% block body %}
 <div class="container">
-    <h1 class="sP text-center">Détails de l'évènement {{occasion.title}}</h1>
+    {#<h1 class="sP text-center">Détails de l'évènement {{occasion.title}}</h1>#}
 
         <section class="row justify-content-center col-lg-12 col-md-12">
 
-                <div class="col lg-5 col-md-7 col-sm-6 shadow text-center mt-3 mb-3 ms-3 me-3" id="eventShow">
+                <div class="col lg-5 col-md-7 col-sm-6 shadow text-center mt-4 mb-3 ms-3 me-3" id="eventShow">
 
-                <h2 class="sP mt-3 mb-3">{{ occasion.title }}</h2>    
+                <h1 class="sP mt-3 mb-3">{{ occasion.title }}</h1>    
 
                 {% for picture in occasion.pictures %}
                     <div class="surroundPics my-1 col-sm-auto">
